@@ -33,6 +33,11 @@ shinyUI(fluidPage(
     mainPanel(
       h3("First, let's glance at the time series about Males and Females' unemployment"),
       fluidRow(
+        column(width = 6, h2("Males")),
+        column(width = 6, h2("Females"))
+      ),
+      hr(),
+      fluidRow(
         column(width = 6, plotOutput("males")),
         column(width = 6, plotOutput("females"))
       ),
