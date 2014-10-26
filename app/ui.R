@@ -6,7 +6,11 @@ shinyUI(fluidPage(
   strong(p("Using http://datamarket.com datasets,", 
            a("see here.", 
              href="https://datamarket.com/en/data/set/19rf/#!ds=19rf!prs=2:prt=4.3.1:pru=f&display=line&s=6ri&e=bsf&title=Harmonised+unemployment+rates+(%25)+-+monthly+data"
-            ))),
+           ))),
+  strong(p("The code can be checked on github,", 
+           a("see here.", 
+             href="https://github.com/andypetrella/devdataprod"
+           ))),
   sidebarLayout(
     sidebarPanel(
       strong("In this form, you can choose the country (or group) for which the time series will be used and compared."),
